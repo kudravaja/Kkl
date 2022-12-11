@@ -1,0 +1,422 @@
+/* заметка, закладки, альбом, наклейка, скрепка, бумажка с алфавитом */
+.frame1{
+  position: relative;
+  width: 1440px;
+  height: 100vw;
+  overflow-x: hidden;}
+
+  .alphabet{
+    position: absolute;
+    width: 50vw;
+    height: 100vw;
+    left: 54vw;
+    top: 6vw;
+    overflow: hidden;
+    }
+    .alphabetImg{
+      width: 100vw;
+      animation: group 3s steps(1) infinite;
+    }
+  @keyframes group {
+    0% {transform: translateX(0vw);}
+    50% {transform: translateX(-53.57vw) rotate(30deg);}
+  }
+
+  .note{
+    position: absolute;
+    left: -1%;}
+
+    .noteImg {
+      position: absolute;
+      width: 57vw;}
+
+    .notetext{
+      margin-top: 5.5vw;
+      margin-left: 6.5vw;
+      width: 57vw;
+      height: 24.8vw;
+      overflow: hidden;
+      position: absolute;}
+
+    .notetextImg {
+      position: absolute;
+      width: 205vw;
+      animation: notetext 6s steps(1) infinite;}
+  @keyframes notetext{
+      0% {transform: translateX(0vw)}
+      5% {transform: translateX(-34.65vw)}
+      10% {transform: translateX(-69.3vw)}
+      15% {transform: translateX(-103.95vw)}
+      20% {transform: translateX(-138.6vw)}
+      25% {transform: translateX(-173.25vw)}
+      30% {transform: translateY(-27.8vw) translateX(0vw)}
+      35% {transform: translateY(-27.8vw) translateX(-34.65vw)}
+      40% {transform: translateY(-27.8vw) translateX(-69.3vw)}
+      45% {transform: translateY(-27.8vw) translateX(-103.95vw)}
+      50% {transform: translateY(-27.8vw) translateX(-138.6vw)}
+      55% {transform: translateY(-27.8vw) translateX(-173.25vw)}
+      60% {transform: translateY(-55.6vw) translateX(0vw)}
+      65% {transform: translateY(-55.6vw) translateX(-34.65vw)}
+      70% {transform: translateY(-55.6vw) translateX(-69.3vw)}
+      75% {transform: translateY(-55.6vw) translateX(-103.95vw)}
+      80% {transform: translateY(-55.6vw) translateX(-138.6vw)}
+      85% {transform: translateY(-55.6vw) translateX(-173.25vw)}
+      /* 100% {transform: translateY(-55.6vw) translateX(-173.25vw)} */
+    }
+
+  .bookmarks{
+    position: absolute;
+    display: flex;
+    width: 56vw;
+    margin-left: 44vw;
+    margin-top: -1%;}
+
+    .bookmark1Img,.bookmark2Img,.bookmark3Img,.bookmark4Img,.bookmark5Img{
+      position: relative;
+      display: flex;
+      margin-left: 3vw;
+      width: 7.5vw;}
+
+      .bookmark1Img{
+        opacity: 1;
+      }
+        .bookmark1Img:hover{
+          opacity: 0;
+          transition: 1s;
+        }
+
+    .paw1Img, .paw2Img, .paw3Img, .paw4Img, .paw5Img{
+      position: absolute;
+      margin-top: -20%;
+      margin-left: 5%;}
+
+      .paw1Img {
+        width: 8vw;
+      }
+        .paw1Img:hover {
+          width: 8vw;
+          transform: rotate(360deg);
+          transition: 1.6s;
+        }
+
+      .paw2Img {
+        width: 8vw;
+      }
+        .paw2Img:hover {
+        width: 8vw;
+        transform: scaleX(1.1) scaleY(1.7);
+        transition: 0.4s;
+      }
+
+      .paw3Img {
+        width: 8vw;
+      }
+        .paw3Img:hover {
+          width: 8vw;
+          transform: skewX(-25deg) skewY(15deg);
+          transition: 0.4s;
+        }
+
+      .paw4Img {
+        width: 8vw;
+      }
+        .paw4Img:hover {
+          width: 8vw;
+          transform: translateY(-60%);
+          transition: 0.6s;
+        }
+
+      .paw5Img {
+        width: 8vw;
+      }
+        .paw5Img:hover {
+        width: 8vw;
+        transform: rotate(-180deg) scale(0);
+        transition: 1.2s;
+      }
+
+  .clip{
+    position: absolute;
+    display: flex;
+    left: 82vw;
+    top: 60vw;}
+    .clipImg{
+    position: absolute;
+    width: 13vw;
+    animation: clip 1.6s alternate infinite ease-in;}
+  @keyframes clip {
+    30% {transform: translate3d(-10px, 0, 0) rotate(-10deg);}
+    100% {transform: translate3d(1000px, 0, 0) rotate(320deg);}
+  }
+
+  .album{
+    position: absolute;
+    width: 55vw;
+    transform:rotate(30deg);
+    left: 34vw;
+    top: 38vw;
+  }
+    .albumImg{
+      position: absolute;
+      width: 52vw;
+      animation: album 3s steps(1) infinite;}
+  @keyframes album {
+    0% {background-size: 52vw;
+      background-image: url(images/album1.svg);}
+    15% {background-size: 52vw;
+      background-image:url(images/album2.svg);}
+    30% {background-size: 52vw;
+      background-image:url(images/album3.svg);}
+    45% {background-size: 52vw;
+      background-image:url(images/album4.svg);}
+    60% {background-size: 52vw;
+      background-image:url(images/album5.svg);}
+    75% {background-size: 52vw;
+      background-image:url(images/album6.svg);}
+    90% {background-size: 52vw;
+      background-image:url(images/album7.svg);}
+    to {background-size: 52vw;
+      background-image:url(images/album8.svg);}
+  }
+
+  .sticker{
+    position: absolute;
+    transform: rotate(300deg);
+    width: 55vw;
+    left: -14vw;
+    top: 40vw;}
+
+    .stickerImg {
+      position: absolute;
+      width: 24vw;
+    }
+
+    .stickerpaw1Img{
+      opacity: 0.9;
+      transform: translateY(-25%);
+      position: absolute;
+      width: 3vw;
+      left: 14.8vw;
+      top: 0.9vw;
+    }
+      .stickerpaw1Img:hover{
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+    .stickerpaw2Img{
+      opacity: 0.9;
+      transform: translateY(-35%);
+      position: absolute;
+      width: 3vw;
+      left: 4vw;
+      top: 1.45vw;
+    }
+      .stickerpaw2Img:hover{
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+    .stickerpaw3Img{
+      opacity: 0.9;
+      transform: translateY(25%);
+      position: absolute;
+      width: 3vw;
+      left: 12.3vw;
+      top: 0.6vw;
+    }
+      .stickerpaw3Img:hover{
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+    .stickerpaw4Img{
+      opacity: 0.9;
+      transform: translateY(35%);
+      position: absolute;
+      width: 3vw;
+      left: 9vw;
+      top: 1.5vw;
+    }
+      .stickerpaw4Img:hover{
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+    .stickerpaw5Img{
+      opacity: 0.9;
+      transform: translateY(35%);
+      position: absolute;
+      width: 2.6vw;
+      left: 19.2vw;
+      top: 1.3vw;
+    }
+      .stickerpaw5Img:hover{
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+    .stickerpaw6Img{
+      opacity: 0.9;
+      transform: translateY(35%);
+      position: absolute;
+      width: 2.8vw;
+      left: 6.7vw;
+      top: 0.9vw;
+    }
+      .stickerpaw6Img:hover{
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+/* палитра, тетрадь, блокнот с картинкой, бумажка с расписанием */
+.frame2{
+  position: relative;
+  top:-30vw;
+  width: 1440px;
+  height: 115vw;
+  overflow-x: hidden;}
+
+  .schedule{
+    position: absolute;
+    top:20vw;
+    width: 58vw;
+  }
+    .scheduleImg{
+      left: -38vw;
+      position: absolute;
+      width: 58vw;}
+
+        .scheduleImg:hover{
+          animation: schedule 4s infinite;}
+  @keyframes schedule {
+    0% {
+      background-size: 58vw;
+      background-repeat: no-repeat;
+      transform: translateX(0vw);
+      background-image: url(images/schedule.svg);
+    }
+    5% {
+      background-size: 58vw;
+      background-repeat: no-repeat;
+      transform: translateX(5vw);
+      background-image: url(images/schedulewithout.svg);
+    }
+    30% {
+      background-size: 58vw;
+      background-repeat: no-repeat;
+      transform: translateX(35vw);
+      background-image:url(images/schedulewith.svg);
+    }
+    70% {
+      background-size: 58vw;
+      background-repeat: no-repeat;
+      transform: translateX(37vw);
+      background-image:url(images/schedulewith.svg);}
+    }
+
+  .covernote{
+    position: absolute;
+    transform: rotate(30deg);
+    top:0vw;
+    left:70vw;
+    width: 70vw;
+  }
+    .covernoteImg{
+      position: absolute;
+      width: 75vw;
+      animation: cover 20s steps(1) alternate infinite;}
+  @keyframes cover {
+      0% {
+        background-size: 75vw;
+        background-repeat: no-repeat;
+        background-image: url(images/cover1.svg);
+      }
+      25% {
+        background-size: 75vw;
+        background-repeat: no-repeat;
+        background-image: url(images/cover2.svg);
+      }
+      50% {
+        background-size: 75vw;
+        background-repeat: no-repeat;
+        background-image:url(images/cover3.svg);
+      }
+      75% {
+        background-size: 75vw;
+        background-repeat: no-repeat;
+        background-image:url(images/cover4.svg);}
+    }
+
+  .notebook{
+    position: absolute;
+    top:43vw;
+    left: -6vw;
+  }
+    .notebookImg{
+      position: absolute;
+      width: 65vw;
+    }
+
+  .lines{
+      top:11vw;
+      left: 16.5vw;
+      width: 35vw;
+      height: 40vw;
+      overflow: hidden;
+      transform: rotate(15.5deg);
+      position: absolute;}
+    .lineImg{
+      margin-left: -3vw;
+      margin-top: -2vw;
+      width: 320vw;
+      animation: lines 10s steps(1) infinite;
+  }
+  @keyframes lines {
+    0% {transform: translateX(0vw) }
+    2% {transform: translateX(-35.1vw)}
+    4% {transform: translateX(-70.2vw)}
+    6% {transform: translateX(-105.3vw)}
+    8% {transform: translateX(-140.4vw)}
+    10% {transform: translateX(-175.5vw)}
+    12% {transform: translateX(-210.6vw)}
+    14% {transform: translateX(-245.7vw)}
+    16% {transform: translateX(-280.8vw)}
+    18% {transform: translateY(-40.52vw) translateX(0vw)}
+    20% {transform: translateY(-40.52vw) translateX(-35.1vw)}
+    22% {transform: translateY(-40.52vw) translateX(-70.2vw)}
+    24% {transform: translateY(-40.52vw) translateX(-105.3vw)}
+    26% {transform: translateY(-40.52vw) translateX(-140.4vw)}
+    28% {transform: translateY(-40.52vw) translateX(-175.5vw)}
+    30% {transform: translateY(-40.52vw) translateX(-210.6vw)}
+    32% {transform: translateY(-40.52vw) translateX(-245.7vw)}
+    34% {transform: translateY(-40.52vw) translateX(-280.8vw)}
+    36% {transform: translateY(-81.02vw) translateX(0vw)}
+    38% {transform: translateY(-81.02vw) translateX(-35.1vw)}
+    40% {transform: translateY(-81.02vw) translateX(-70.2vw)}
+    42% {transform: translateY(-81.02vw) translateX(-105.3vw)}
+    44% {transform: translateY(-81.02vw) translateX(-140.4vw)}
+    46% {transform: translateY(-81.02vw) translateX(-175.5vw)}
+    48% {transform: translateY(-81.02vw) translateX(-210.6vw)}
+    50% {transform: translateY(-81.02vw) translateX(-245.7vw)}
+    52% {transform: translateY(-81.02vw) translateX(-280.8vw)}
+    54% {transform: translateY(-121.52vw) translateX(0vw)}
+    56% {transform: translateY(-121.52vw) translateX(-35.1vw)}
+    58% {transform: translateY(-121.52vw) translateX(-70.2vw)}
+    60% {transform: translateY(-121.52vw) translateX(-105.3vw)}
+    62% {transform: translateY(-121.52vw) translateX(-140.4vw)}
+    64% {transform: translateY(-121.52vw) translateX(-175.5vw)}
+    66% {transform: translateY(-121.52vw) translateX(-210.6vw)}
+    68% {transform: translateY(-121.52vw) translateX(-245.7vw)}
+    70% {transform: translateY(-121.52vw) translateX(-280.8vw)}
+    72% {transform: translateY(-162.02vw) translateX(0vw)}
+    74% {transform: translateY(-162.02vw) translateX(-35.1vw)}
+    76% {transform: translateY(-162.02vw) translateX(-70.2vw)}
+    98% {transform: translateY(-162.02vw) translateX(-105.3vw)}
+  }
