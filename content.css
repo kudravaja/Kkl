@@ -1,8 +1,8 @@
 /* заметка, закладки, альбом, наклейка, скрепка, бумажка с алфавитом */
 .frame1{
   position: relative;
-  width: 1440px;
-  height: 100vw;
+  width: 100vw;
+  height: 108vw;
   overflow-x: hidden;}
 
   .alphabet{
@@ -10,8 +10,9 @@
     width: 50vw;
     height: 100vw;
     left: 54vw;
-    top: 6vw;
+    top: 4vw;
     overflow: hidden;
+    z-index: 1;
     }
     .alphabetImg{
       width: 100vw;
@@ -25,11 +26,9 @@
   .note{
     position: absolute;
     left: -1%;}
-
     .noteImg {
       position: absolute;
       width: 57vw;}
-
     .notetext{
       margin-top: 5.5vw;
       margin-left: 6.5vw;
@@ -37,7 +36,6 @@
       height: 24.8vw;
       overflow: hidden;
       position: absolute;}
-
     .notetextImg {
       position: absolute;
       width: 205vw;
@@ -69,22 +67,13 @@
     display: flex;
     width: 56vw;
     margin-left: 44vw;
-    margin-top: -1%;}
-
+    margin-top: -1%;
+    z-index: 2;}
     .bookmark1Img,.bookmark2Img,.bookmark3Img,.bookmark4Img,.bookmark5Img{
       position: relative;
       display: flex;
       margin-left: 3vw;
       width: 7.5vw;}
-
-      .bookmark1Img{
-        opacity: 1;
-      }
-        .bookmark1Img:hover{
-          opacity: 0;
-          transition: 1s;
-        }
-
     .paw1Img, .paw2Img, .paw3Img, .paw4Img, .paw5Img{
       position: absolute;
       margin-top: -20%;
@@ -113,7 +102,7 @@
       }
         .paw3Img:hover {
           width: 8vw;
-          transform: skewX(-25deg) skewY(15deg);
+          transform: skewX(-25deg) skewY(15deg) scale(1.2);
           transition: 0.4s;
         }
 
@@ -130,10 +119,10 @@
         width: 8vw;
       }
         .paw5Img:hover {
-        width: 8vw;
-        transform: rotate(-180deg) scale(0);
-        transition: 1.2s;
-      }
+          width: 8vw;
+          transform: rotate(-180deg) scale(0.5);
+          transition: 1.2s;
+          }
 
   .clip{
     position: absolute;
@@ -155,7 +144,7 @@
     transform:rotate(30deg);
     left: 34vw;
     top: 38vw;
-  }
+    z-index: 3;}
     .albumImg{
       position: absolute;
       width: 52vw;
@@ -278,23 +267,22 @@
 /* палитра, тетрадь, блокнот с картинкой, бумажка с расписанием */
 .frame2{
   position: relative;
-  top:-30vw;
-  width: 1440px;
+  top:-40vw;
+  width: 100vw;
   height: 115vw;
   overflow-x: hidden;}
 
   .schedule{
     position: absolute;
     top:20vw;
-    width: 58vw;
-  }
+    width: 58vw;}
     .scheduleImg{
       left: -38vw;
       position: absolute;
       width: 58vw;}
 
         .scheduleImg:hover{
-          animation: schedule 4s infinite;}
+          animation: schedule 6s infinite linear;}
   @keyframes schedule {
     0% {
       background-size: 58vw;
@@ -308,13 +296,18 @@
       transform: translateX(5vw);
       background-image: url(images/schedulewithout.svg);
     }
-    35% {
+    25% {
       background-size: 58vw;
       background-repeat: no-repeat;
       transform: translateX(35vw);
       background-image:url(images/schedulewith.svg);
     }
-    70% {
+    50% {
+      background-size: 58vw;
+      background-repeat: no-repeat;
+      transform: translateX(37vw);
+      background-image:url(images/schedulewith.svg);}
+    100% {
       background-size: 58vw;
       background-repeat: no-repeat;
       transform: translateX(37vw);
@@ -326,8 +319,7 @@
     transform: rotate(30deg);
     top:0vw;
     left:70vw;
-    width: 70vw;
-  }
+    width: 70vw;}
     .covernoteImg{
       position: absolute;
       width: 75vw;
@@ -357,14 +349,13 @@
   .notebook{
     position: absolute;
     top:43vw;
-    left: -6vw;
-  }
+    left: -6vw;}
     .notebookImg{
+      z-index: 1;
       position: absolute;
-      width: 65vw;
-    }
-
+      width: 65vw;}
   .lines{
+      z-index: 3;
       top:11vw;
       left: 16.5vw;
       width: 35vw;
@@ -373,11 +364,11 @@
       transform: rotate(15.5deg);
       position: absolute;}
     .lineImg{
+      z-index: 3;
       margin-left: -3vw;
       margin-top: -2vw;
       width: 320vw;
-      animation: lines 10s steps(1) infinite;
-  }
+      animation: lines 10s steps(1) infinite;}
   @keyframes lines {
     0% {transform: translateX(0vw) }
     2% {transform: translateX(-35.1vw)}
@@ -420,3 +411,204 @@
     76% {transform: translateY(-162.02vw) translateX(-70.2vw)}
     98% {transform: translateY(-162.02vw) translateX(-105.3vw)}
   }
+
+  .palette{
+    position: relative;
+    top:43vw;
+    width: 100vw;
+    left: -6vw;}
+
+    .paletteImg{
+      z-index: 1;
+      position: absolute;
+      top: 49vw;
+      left: 51vw;
+      width: 62vw;}
+
+      .redImg{
+        z-index: 1;
+        position: absolute;
+        width: 13vw;
+        top: 93vw;
+        left: 63vw;
+      }
+      .blueImg{
+        z-index: 1;
+        position: absolute;
+        width: 10vw;
+        top: 56vw;
+        left: 80vw;
+      }
+      .orangeImg{
+        z-index: 1;
+        position: absolute;
+        width: 13vw;
+        top: 77vw;
+        left: 58vw;
+      }
+      .yellowImg{
+        z-index: 1;
+        position: absolute;
+        width: 12vw;
+        top: 62vw;
+        left: 64vw;
+      }
+        .yellow2Img{
+          z-index: 1;
+          position: absolute;
+          width: 11vw;
+          top: 100vw;
+          left: 78vw;
+        }
+    .notebookredImg, .notebookblueImg, .notebookorangeImg, .notebookyellowImg{
+      opacity:0;
+      position: absolute;
+      top:47.86vw;
+      left: -0.95vw;
+      width: 54.9vw;}
+
+      .redImg:hover ~ .notebookredImg{
+        z-index: 2;
+        opacity: 1;
+        transition: 0.1s linear;}
+      .blueImg:hover ~ .notebookblueImg{
+        z-index: 2;
+        opacity: 1;
+        transition: 0.1s linear;}
+      .orangeImg:hover ~ .notebookorangeImg{
+        z-index: 2;
+        opacity: 1;
+        transition: 0.1s linear;}
+      .yellowImg:hover ~ .notebookyellowImg{
+        z-index: 2;
+        opacity: 1;
+        transition: 0.1s linear;}
+        .yellow2Img:hover ~ .notebookyellowImg{
+          z-index: 2;
+          opacity: 1;
+          transition: 0.1s linear;}
+
+/* скрепка2/3, а4, цыпленок, бумажка с пунктами, курица с глазом, бумажки скрепленные */
+.frame3{
+  position: relative;
+  top:-70vw;
+  width: 100vw;
+  height: 250vw;
+  overflow-x: hidden;}
+
+    .a4{
+      z-index: 0;
+      position: absolute;
+      transform: rotate(15deg);
+      top:0vw;
+      left:18vw;
+      width: 60vw;}
+      .a4Img{
+        position: absolute;
+        width: 61vw;
+        animation: a4 3s steps(1) infinite;}
+    @keyframes a4 {
+      0% {
+        background-position: right;
+        background-size: 61vw;
+        background-repeat: no-repeat;
+        background-image: url(images/a4-2.svg);
+      }
+      25% {
+        background-position: right;
+        background-size: 61vw;
+        background-repeat: no-repeat;
+        background-image: url(images/a4-3.svg);
+      }
+      50% {
+        background-position: right;
+        background-size: 61vw;
+        background-repeat: no-repeat;
+        background-image:url(images/a4-4.svg);
+      }
+      75% {
+        background-position: right;
+        background-size: 61vw;
+        background-repeat: no-repeat;
+        background-image:url(images/a4-5.svg);}
+      }
+
+    .clip2{
+      z-index: 1;
+      position: absolute;
+      left: 84vw;
+      top: 35vw;}
+      .clip2Img{
+      position: absolute;
+      width: 9vw;
+      animation: clip2 1.8s alternate infinite ease-in;}
+    @keyframes clip2 {
+      30% {transform: translate3d(-15px, 0, 0) rotate(-20deg);}
+      100% {transform: translate3d(800px, 0, 0) rotate(500deg);}
+    }
+
+    .clip3{
+      position: absolute;
+      left: 5vw;
+      top: 25vw;}
+      .clip3Img{
+      position: absolute;
+      width: 9vw;
+      animation: clip3 2.2s alternate infinite ease-in-out;}
+    @keyframes clip3 {
+      55% {transform: translate3d(15px, 0, 0) rotate(10deg);}
+      100% {transform: translate3d(-160px, 0, 0) rotate(-340deg);}
+    }
+
+    .paper{
+      position: absolute;
+      top:22vw;
+      left: 45vw;
+      width: 58vw;}
+
+      .paperImg{
+        width: 58vw;
+        animation: paper 5s steps(1) alternate infinite;}
+    @keyframes paper {
+      0% {
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        transform: translateY(0vw) translateX(0vw) rotate(0deg);
+        background-image: url(images/paper1.svg);
+      }
+      15% {
+        background-size: 40vw;
+        background-repeat: no-repeat;
+        transform: translateY(10vw) translateX(5vw) rotate(60deg);
+        background-image: url(images/paper2.svg);
+      }
+      30% {
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        transform: translateY(5vw) translateX(10vw) rotate(120deg);
+        background-image:url(images/paper3.svg);
+      }
+      45% {
+        background-size: 40vw;
+        background-repeat: no-repeat;
+        transform: translateY(15vw) translateX(10vw) rotate(180deg);
+        background-image: url(images/paper1.svg);
+      }
+      70% {
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        transform: translateY(5vw) translateX(10vw) rotate(240deg);
+        background-image: url(images/paper2.svg);
+      }
+      85% {
+        background-size: 40vw;
+        background-repeat: no-repeat;
+        transform: translateY(10vw) translateX(5vw) rotate(300deg);
+        background-image:url(images/paper3.svg);
+      }
+      100% {
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        transform: translateY(0vw) translateX(0vw) rotate(0deg);
+        background-image: url(images/paper1.svg);
+      }
