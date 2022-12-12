@@ -33,7 +33,7 @@
     .notetext{
       margin-top: 5.5vw;
       margin-left: 6.5vw;
-      width: 57vw;
+      width: 33vw;
       height: 24.8vw;
       overflow: hidden;
       position: absolute;}
@@ -302,13 +302,13 @@
       transform: translateX(0vw);
       background-image: url(images/schedule.svg);
     }
-    5% {
+    1% {
       background-size: 58vw;
       background-repeat: no-repeat;
       transform: translateX(5vw);
       background-image: url(images/schedulewithout.svg);
     }
-    30% {
+    35% {
       background-size: 58vw;
       background-repeat: no-repeat;
       transform: translateX(35vw);
