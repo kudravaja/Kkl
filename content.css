@@ -282,7 +282,7 @@
       width: 58vw;}
 
         .scheduleImg:hover{
-          animation: schedule 6s infinite linear;}
+          animation: schedule 6s alternate infinite linear;}
   @keyframes schedule {
     0% {
       background-size: 58vw;
@@ -354,7 +354,7 @@
       z-index: 1;
       position: absolute;
       width: 65vw;}
-  .lines{
+    .lines{
       z-index: 3;
       top:11vw;
       left: 16.5vw;
@@ -493,7 +493,7 @@
   position: relative;
   top:-70vw;
   width: 100vw;
-  height: 250vw;
+  height: 130vw;
   overflow-x: hidden;}
 
     .a4{
@@ -561,12 +561,14 @@
     }
 
     .paper{
+      z-index: 2;
       position: absolute;
       top:22vw;
       left: 45vw;
       width: 58vw;}
 
       .paperImg{
+        z-index: 2;
         width: 58vw;
         animation: paper 5s steps(1) alternate infinite;}
     @keyframes paper {
@@ -612,3 +614,1112 @@
         transform: translateY(0vw) translateX(0vw) rotate(0deg);
         background-image: url(images/paper1.svg);
       }
+    }
+
+    .pawchicken{
+      position: absolute;
+      top: 34vw;
+      left: 7vw;
+    }
+      .pawchickenImg{
+        width: 33vw;
+        animation: pawchicken 5s steps(1) infinite;}
+    @keyframes pawchicken {
+      0% {
+        background-size: 37vw;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image: url(images/pawchicken1.svg);
+      }
+      33% {
+        background-size: 37vw;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image:url(images/pawchicken2.svg);
+      }
+      66% {
+        background-size: 37vw;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image:url(images/pawchicken3.svg);
+      }
+    }
+
+    .chick{
+      position: absolute;
+      top: 74vw;
+      left: -3vw;
+      transform: rotate(30deg);
+    }
+      .chickImg{
+        width: 43vw;
+        animation: chick 2s steps(1) infinite;}
+    @keyframes chick {
+      0% {
+        background-size: 43vw;
+        background-image: url(images/chick1.svg);
+      }
+      50% {
+        background-size: 43vw;
+        background-image:url(images/chick2.svg);
+      }
+    }
+
+    .note-lines{
+        z-index: 1;
+        top: 65vw;
+        left: 35vw;
+        width: 44vw;
+        overflow: hidden;
+        position: absolute;}
+
+      .note-linesImg{
+        z-index: 1;
+        width: 264vw;
+        animation: note-lines 4s steps(1) alternate infinite;}
+    @keyframes note-lines {
+      0% {transform: translateX(0vw) }
+      15% {transform: translateX(-44.1vw)}
+      30% {transform: translateX(-88.2vw)}
+      45% {transform: translateX(-132.3vw)}
+      60% {transform: translateX(-176.4vw)}
+      75% {transform: translateX(-220.5vw)}
+    }
+
+/* стикеры, круглая бумажка, бумажка с фигурами, тюбик с краской */
+.frame4{
+  position: relative;
+  top:-105vw;
+  width: 100vw;
+  height: 100vw;
+  overflow-x: hidden;}
+
+  .papersticker{
+    position: relative;
+    top:23vw;
+    left:2vw;
+    width: 43vw;
+    display: flex;
+    transform: rotate(-10deg)}
+
+      .orangeframeImg{
+        position: absolute;
+        left:-1vw;
+        z-index: 2;
+        width: 43vw;
+      }
+      .paperstickerImg{
+        position: absolute;
+        left:-1vw;
+        z-index: 0;
+        width: 43vw;}
+
+      .elipseImg{
+        width: 17vw;
+        top: 22vw;
+        left: 6vw;
+        z-index: 1;
+        position: absolute;
+        animation: elipse 8s linear infinite;}
+        @keyframes elipse {
+        0% {transform: translateY(0vw) translateX(0vw) rotate(90deg);}
+        25% {transform: translateY(-4vw) translateX(15vw) rotate(180deg);}
+        50% {transform: translateY(-19vw) translateX(13vw) rotate(270deg);}
+        75% {transform: translateY(-17vw) translateX(-4vw) rotate(180deg);}
+      }
+      .reactangleImg{
+        width: 19vw;
+        top: 16vw;
+        left: 21vw;
+        z-index: 1;
+        position: absolute;
+        animation: reactangle 8s linear infinite;}
+        @keyframes reactangle {
+        0% {transform: translateY(0vw) translateX(0vw) rotate(90deg);}
+        25% {transform: translateY(-15vw) translateX(-4vw) rotate(180deg);}
+        50% {transform: translateY(-13vw) translateX(-20vw) rotate(270deg);}
+        75% {transform: translateY(4vw) translateX(-17vw) rotate(180deg);}
+      }
+      .polygonImg{
+        width: 15vw;
+        top: 2vw;
+        left: 15vw;
+        z-index: 1;
+        position: absolute;
+        animation: polygon 8s linear infinite;}
+
+        @keyframes polygon {
+          0% {transform: translateY(0vw) translateX(0vw) rotate(90deg);}
+          25% {transform: translateY(3vw) translateX(-10vw) rotate(180deg);}
+          50% {transform: translateY(20vw) translateX(-8vw) rotate(270deg);}
+          75% {transform: translateY(16vw) translateX(12vw) rotate(180deg);}
+          100% {transform: translateY(0vw) translateX(0vw) rotate(90deg);}
+        }
+      .squareImg{
+        width: 19vw;
+        top: 5vw;
+        left: 1vw;
+        z-index: 1;
+        position: absolute;
+        animation: square 8s linear infinite;}
+
+        @keyframes square {
+          0% {transform: translateY(0vw) translateX(0vw) rotate(90deg);}
+          25% {transform: translateY(14vw) translateX(2vw) rotate(180deg);}
+          50% {transform: translateY(12vw) translateX(18vw) rotate(270deg);}
+          75% {transform: translateY(-2vw) translateX(17vw) rotate(180deg);}
+        }
+
+  .bluepaper{
+    position: absolute;
+    top:1vw;
+    left:70vw;}
+
+      .bluepaperImg{
+        position: absolute;
+        width: 25vw;
+        animation: bluepaper 12s linear alternate infinite;}
+  @keyframes bluepaper {
+    0% {transform: translateX(5vw) rotate(0deg);}
+    25% {transform: translateX(10vw) rotate(90deg);}
+    50% {transform: translateX(15vw) rotate(180deg);}
+    75% {transform: translateX(10vw) rotate(270deg);}
+    100% {transform: translateX(5vw) rotate(360deg);}
+  }
+
+  .paint{
+    z-index: 2;
+    position: absolute;
+    height: 50vw;
+    top:37vw;
+    left:60vw;}
+
+    .paintImg{
+      z-index: 1;
+      width: 60vw;
+      position: absolute;}
+
+    .paintwithImg{
+      z-index: 0;
+      width: 100vw;
+      position: absolute;
+      top:-26vw;
+      left:-37.5vw;
+      opacity: 0;}
+
+    .paintImg:hover ~ .paintwithImg{
+      opacity: 1;
+      transition: 0.8s linear;}
+
+  .sticker1{
+    width: 100vw;
+    height: 80vw;
+    position: relative;}
+
+      .stickerbefore1Img {
+        z-index: 2;
+        top:19vw;
+        left: 58vw;
+        width: 22vw;
+        opacity: 1;
+        position: absolute;}
+
+        .stickerafter1Img {
+          z-index: 1;
+          top:19vw;
+          left: 58vw;
+          width: 22vw;
+          opacity: 1;
+          position: absolute;}
+
+          .stickerbefore1Img:hover {
+            opacity: 0;
+            transition: 0.2s linear;}
+      .stickerbefore2Img {
+        z-index: 2;
+        top:63vw;
+        left: 42vw;
+        width: 22vw;
+        opacity: 1;
+        position: absolute;}
+
+        .stickerafter2Img {
+          z-index: 1;
+          top:63vw;
+          left: 42vw;
+          width: 22vw;
+          opacity: 1;
+          position: absolute;}
+
+          .stickerbefore2Img:hover {
+            opacity: 0;
+            transition: 0.2s linear;}
+      .stickerbefore3Img {
+        z-index: 2;
+        transform: rotate(30deg);
+        top:78vw;
+        left: 72vw;
+        width: 22vw;
+        opacity: 1;
+        position: absolute;}
+
+        .stickerafter3Img {
+          z-index: 1;
+          transform: rotate(30deg);
+          top:78vw;
+          left: 72vw;
+          width: 22vw;
+          opacity: 1;
+          position: absolute;}
+
+          .stickerbefore3Img:hover {
+            opacity: 0;
+            transition: 0.2s linear;}
+      .stickerbefore4Img {
+        z-index: 2;
+        top:32vw;
+        left: 75vw;
+        width: 22vw;
+        opacity: 1;
+        position: absolute;}
+
+        .stickerafter4Img {
+          z-index: 1;
+          top:32vw;
+          left: 75vw;
+          width: 22vw;
+          opacity: 1;
+          position: absolute;}
+
+          .stickerbefore4Img:hover {
+            opacity: 0;
+            transition: 0.2s linear;}
+      .stickerbefore5Img {
+        z-index: 2;
+        transform: rotate(-30deg);
+        top:74vw;
+        left: 3vw;
+        width: 22vw;
+        opacity: 1;
+        position: absolute;}
+        .stickerafter5Img {
+        z-index: 1;
+        transform: rotate(-30deg);
+        top:74vw;
+        left: 3vw;
+        width: 22vw;
+        opacity: 1;
+        position: absolute;}
+
+        .stickerbefore5Img:hover {
+          opacity: 0;
+          transition: 0.2s linear;}
+
+/* лист с кнопкой, цветочек, блокнот, кисть с краской, стикер */
+.frame5{
+  position: relative;
+  top:-135vw;
+  width: 100vw;
+  height: 135vw;
+  overflow-x: hidden;}
+
+  .chickenpin{
+    position: absolute;
+    width: 50vw;
+    left:20vw;}
+
+      .chickenpinImg{
+        transform: rotate(-12deg);
+        width: 50vw;
+        position: absolute;
+        animation: chickenpin 6s linear alternate infinite;}
+  @keyframes chickenpin {
+    0%
+    {background-size: 50vw;
+    background-image: url(images/colorchicken1.svg);
+    transform: rotate(-12deg);
+    background-repeat: no-repeat;}
+    25%
+    {background-size: 50vw;
+    background-image: url(images/colorchicken2.svg);
+    transform: rotate(-12deg);
+    background-repeat: no-repeat;}
+    50%
+    {background-size: 50vw;
+    background-image:url(images/colorchicken3.svg);
+    transform: rotate(-12deg);
+    background-repeat: no-repeat;}
+    75%
+    {background-size: 50vw;
+    background-image:url(images/colorchicken4.svg);
+    transform: rotate(-12deg);
+    background-repeat: no-repeat;}
+    100%
+    {background-size: 50vw;
+    background-image:url(images/colorchicken1.svg);
+    transform: rotate(-12deg);
+    background-repeat: no-repeat;}
+  }
+
+  .paperwithflower{
+    top: 5vw;
+    position: relative;}
+
+    .paperwithflowerImg{
+      transform: rotate(10deg);
+      position: relative;
+      width: 58vw;
+      top: 12vw;
+      left: 42vw;}
+
+    .flower{
+      position: absolute;
+      width: 35vw;
+      height: 40vw;
+      overflow: hidden;
+      top:42vw;
+      left: 50vw;
+      transform: rotate(7deg);}
+    .flowerImg{
+      height: 37vw;
+      z-index: 2;
+      position: absolute;
+      animation: flower 6s steps(1) alternate infinite;}
+  @keyframes flower {
+    0% {transform: translateX(0vw);}
+    2.7% {transform: translateX(-37.85vw);}
+    5.4% {transform: translateX(-75.7vw);}
+    8.1% {transform: translateX(-113.55vw);}
+    10.8% {transform: translateX(-151.4vw);}
+    13.5% {transform: translateX(-189.25vw);}
+    16.2% {transform: translateX(-227.1vw);}
+    18.9% {transform: translateX(-264.95vw);}
+    21.6% {transform: translateX(-302.8vw);}
+    24.3% {transform: translateX(-340.65vw);}
+    25.0% {transform: translateX(-378.5vw);}
+    27.7% {transform: translateX(-416.35vw);}
+    30.4% {transform: translateX(-454.2vw);}
+    33.1% {transform: translateX(-492.05vw);}
+    35.8% {transform: translateX(-529.9vw);}
+    38.5% {transform: translateX(-567.75vw);}
+    41.2% {transform: translateX(-605.6vw);}
+    43.9% {transform: translateX(-643.45vw);}
+    46.6% {transform: translateX(-681.3vw);}
+    49.3% {transform: translateX(-719.15vw);}
+    52% {transform: translateX(-757vw);}
+    54.7% {transform: translateX(-794.85vw);}
+    57.4% {transform: translateX(-832.7vw);}
+    60.1% {transform: translateX(-870.55vw);}
+    62.8% {transform: translateX(-908.4vw);}
+    65.5% {transform: translateX(-946.25vw);}
+    68.2% {transform: translateX(-984.1vw);}
+    70.9% {transform: translateX(-1021.95vw);}
+    73.6% {transform: translateX(-1059.8vw);}
+    76.3% {transform: translateX(-1097.65vw);}
+    79% {transform: translateX(-1135.5vw);}
+    81.7% {transform: translateX(-1173.35vw);}
+    84.4% {transform: translateX(-1211.2vw);}
+    87.1% {transform: translateX(-1249.05vw);}
+    89.8% {transform: translateX(-1286.9vw);}
+    92.5% {transform: translateX(-1324.75vw);}
+    95.2% {transform: translateX(-1362.6vw);}
+    97.9% {transform: translateX(-1400.45vw);}
+    100% {transform: translateX(-1438.3vw);}
+  }
+
+  .sticker1{
+    width: 100vw;
+    height: 80vw;
+    position: relative;}
+
+    .stickerbefore6Img {
+      z-index: 2;
+      transform: rotate(30deg);
+      top:20vw;
+      left: 3vw;
+      width: 22vw;
+      opacity: 1;
+      position: absolute;}
+      .stickerafter6Img {
+      z-index: 1;
+      transform: rotate(30deg);
+      top:20vw;
+      left: 3vw;
+      width: 22vw;
+      opacity: 1;
+      position: absolute;}
+
+      .stickerbefore6Img:hover {
+        opacity: 0;
+        transition: 0.2s linear;}
+
+  .chickennote{
+    width: 60vw;
+    top:-32vw;
+    left:2vw;
+    position: relative;}
+    .chickennoteImg{
+      width: 42vw;
+      position: absolute;
+      animation: chickennote 3s steps(1) infinite;}
+  @keyframes chickennote {
+    0%
+    {background-size: 42vw;
+    background-image: url(images/chickenyellow.svg);
+    background-repeat: no-repeat;}
+    50%
+    {background-size: 42vw;
+    background-image: url(images/chickenorange.svg);
+    background-repeat: no-repeat;}
+    100%
+    {background-size: 42vw;
+    background-image: url(images/chickenyellow.svg);
+    background-repeat: no-repeat;}
+  }
+
+  .paint2{
+    position: absolute;
+    height: 60vw;}
+    .paint2Img{
+      z-index: 1;
+      top:0vw;
+      left:-6vw;
+      width: 40vw;
+      position: absolute;}
+    .paint1Img{
+      z-index: 2;
+      width: 73.9vw;
+      position: absolute;
+      top: -23.7vw;
+      left: -19vw;
+      opacity: 0;}
+    .paint1Img:hover{
+      opacity: 1;
+      transition: 0.5s linear;}
+
+/* лист с кнопкой, цветочек, блокнот, кисть с краской, стикер */
+.frame6{
+  position: relative;
+  top:-190vw;
+  width: 100vw;
+  height: 84vw;
+  overflow-x: hidden;}
+
+  .paperpaws{
+    width: 60vw;
+    left:63vw;
+    position: relative;}
+    .paperpawsImg{
+      width: 38vw;
+      position: absolute;
+      animation: paperpaws 3s steps(1) infinite;}
+  @keyframes paperpaws {
+    0%
+    {background-size: 38vw;
+    background-image: url(images/paperpaws1.svg);
+    background-repeat: no-repeat;}
+    30%
+    {background-size: 38vw;
+    background-image: url(images/paperpaws2.svg);
+    background-repeat: no-repeat;}
+    60%
+    {background-size: 38vw;
+    background-image: url(images/paperpaws3.svg);
+    background-repeat: no-repeat;}
+  }
+
+  .chickenpaws{
+    background-image: url(images/chickenwithpaws.svg);
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    height: 29vw;
+    top: 18vw;
+    left: 4vw;
+    width: 60vw;
+    overflow-x: hidden;
+    transform: rotate(9deg);
+    position: relative;}
+
+    .chickenpawsImg{
+      z-index: 2;
+      width: 557vw;
+      top: 2vw;
+      left: -52vw;
+      position: absolute;
+      animation: chickenpaws 5s steps(1) infinite;}
+  @keyframes chickenpaws {
+    0% {transform: translateX(0vw);}
+    7% {transform: translateX(-56.2vw);}
+    14% {transform: translateX(-112.4vw);}
+    21% {transform: translateX(-168.6vw);}
+    28% {transform: translateX(-224.8vw);}
+    35% {transform: translateX(-281vw);}
+    42% {transform: translateX(-337.2vw);}
+    49% {transform: translateX(-393.4vw);}
+    56% {transform: translateX(-449.6vw);}
+    100% {transform: translateX(-449.4vw);}
+  }
+
+  .clip4{
+    position: absolute;
+    display: flex;
+    left: 82vw;
+    top: 67vw;}
+    .clip4Img{
+    position: absolute;
+    width: 10vw;
+    animation: clip4 4.6s alternate infinite ease-in;}
+  @keyframes clip4 {
+    30% {transform: translate3d(-10px, 0, 0) rotate(-10deg);}
+    100% {transform: translate3d(200px, 0, 0) rotate(320deg);}
+  }
+
+  .sticker10Img{
+    transform: rotate(0deg);
+    position: absolute;
+    width: 10vw;
+    left: 85vw;
+    top: 40vw;}
+
+    .sticker10Img:hover{
+      transform: rotate(360deg);
+      transition: 1s;}
+  .sticker12Img{
+    z-index: 2;
+    transform: rotate(0deg);
+    position: absolute;
+    width: 10vw;
+    left: 78vw;
+    top: 55vw;}
+
+    .sticker12Img:hover{
+      transform: rotate(360deg);
+      transition: 1s;}
+
+  .paperwithtext{
+    z-index: 1;
+    width: 35vw;
+    left:39vw;
+    top: 24vw;
+    position: relative;}
+
+    .paperwithtextImg{
+      width: 38vw;
+      position: absolute;}
+
+    .zImg{
+      width: 5vw;
+      left:4vw;
+      top:2vw;
+      transform: rotate(30deg);
+      position: absolute;}
+
+      .zImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .dImg{
+      width: 5vw;
+      left:10vw;
+      top:2vw;
+      transform: rotate(50deg);
+      position: absolute;}
+
+      .dImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .eImg{
+      width: 3.5vw;
+      left:17vw;
+      top:2vw;
+      transform: rotate(180deg);
+      position: absolute;}
+
+      .eImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .sImg{
+      width: 5vw;
+      left:22vw;
+      top:2vw;
+      transform: rotate(50deg);
+      position: absolute;}
+
+      .sImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .pImg{
+      width: 3.5vw;
+      left:28vw;
+      top:2vw;
+      transform: rotate(-60deg);
+      position: absolute;}
+
+      .pImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+
+    .bImg{
+      width: 5.5vw;
+      left:8vw;
+      top:9vw;
+      transform: rotate(30deg);
+      position: absolute;}
+
+      .bImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .PIImg{
+      width: 5vw;
+      left:14vw;
+      top:11vw;
+      transform: rotate(10deg);
+      position: absolute;}
+
+      .PIImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .lImg{
+      width: 5vw;
+      left:21vw;
+      top:11vw;
+      transform: rotate(-20deg);
+      position: absolute;}
+
+      .lImg:hover{
+        transform: rotate(0deg);
+        transition: 0.8s;
+        }
+    .a1Img{
+      width: 5vw;
+      left:26vw;
+      top:11vw;
+      transform: rotate(30deg);
+      position: absolute;}
+
+      .a1Img:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+
+    .kImg{
+      width: 4vw;
+      left:4vw;
+      top:21vw;
+      transform: rotate(50deg);
+      position: absolute;}
+
+      .kImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .uImg{
+      width: 3.5vw;
+      left:8vw;
+      top:21vw;
+      transform: rotate(-20deg);
+      position: absolute;}
+
+      .uImg:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+    .rImg{
+      width: 5vw;
+      left:12vw;
+      top:21vw;
+      transform: rotate(-20deg);
+      position: absolute;}
+
+      .rImg:hover{
+        transform: rotate(0deg);
+        transition: 0.8s;
+        }
+    .iImg{
+      width: 4vw;
+      left:18vw;
+      top:21vw;
+      transform: rotate(-60deg);
+      position: absolute;}
+
+      .iImg:hover{
+        transform: rotate(0deg);
+        transition: 0.8s;
+        }
+    .cImg{
+      width: 5vw;
+      left:23vw;
+      top:21vw;
+      transform: rotate(40deg);
+      position: absolute;}
+
+      .cImg:hover{
+        transform: rotate(0deg);
+        transition: 0.8s;
+        }
+    .a2Img{
+      width: 5vw;
+      left:29vw;
+      top:21vw;
+      transform: rotate(-100deg);
+      position: absolute;}
+
+      .a2Img:hover{
+      transform: rotate(0deg);
+      transition: 0.8s;
+      }
+
+/* письмо, наклейки3-5, палитра2, письмо2, кнопка */
+.frame7{
+  position: relative;
+  top:-225vw;
+  width: 100vw;
+  height: 166vw;
+  overflow-x: hidden;}
+
+  .mail{
+    width: 60vw;
+    left: 2vw;
+    position: relative;}
+    .mailImg{
+      width: 34vw;
+      position: absolute;
+      animation: mail 3s steps(1) infinite;}
+  @keyframes mail {
+    0%
+    {background-size: 34vw;
+    background-image: url(images/mailred.svg);
+    background-repeat: no-repeat;}
+    50%
+    {background-size: 34vw;
+    background-image: url(images/mailwhite.svg);
+    background-repeat: no-repeat;}}
+
+  .notebook2{
+    position: relative;}
+    .notebook2Img{
+      top: 38vw;
+      left: 38vw;
+      width: 60vw;
+      position: absolute;
+      animation: notebook2 2s alternate linear infinite;}
+  @keyframes notebook2 {
+    30% {transform: translateX(-2vw);}
+    50% {transform: translateX(0vw);}
+    60% {transform: translateX(-1vw);}
+    70% {transform: translateX(0vw);}
+    100% {transform: translateX(-2vw);}}
+
+  .sticker01Img{
+    position: absolute;
+    width: 11vw;
+    left: 21vw;
+    top: 57vw;}
+
+    .sticker01Img:hover{
+      transform: translateX(-10vw) rotate(45deg);
+      transition: 0.5s linear;}
+  .sticker09Img{
+    transform: rotate(0deg);
+    position: absolute;
+    width: 10vw;
+    left: 55vw;
+    top: 95vw;}
+
+    .sticker09Img:hover{
+      transform: rotate(180deg);
+      transition: 0.5s linear;}
+  .sticker07Img{
+    transform: rotate(0deg);
+    position: absolute;
+    width: 10vw;
+    left: 73vw;
+    top: 102vw;}
+
+    .sticker07Img:hover{
+      transform: rotate(-180deg);
+      transition: 0.5s linear;}
+  .sticker14Img{
+    transform: rotate(0deg);
+    position: absolute;
+    width: 10vw;
+    left: -4vw;
+    top: 120vw;}
+
+    .sticker14Img:hover{
+      transform: rotate(360deg);
+      transition: 0.5s linear;}
+
+  .palettebase{
+    z-index: 3;
+    top:95vw;
+    left: 52vw;
+    transform: rotate(42deg);
+    position: relative;}
+    .palettebaseImg{
+      width: 60vw;
+      position: absolute;
+      animation: palettebase 2s steps(1) infinite;}
+  @keyframes palettebase {
+    0%
+    {background-size: 60vw;
+    background-image: url(images/palette1.svg);
+    background-repeat: no-repeat;}
+    20%
+    {background-size: 60vw;
+    background-image: url(images/palette2.1.svg);
+    background-repeat: no-repeat;}
+    40%
+    {background-size: 60vw;
+    background-image: url(images/palette3.svg);
+    background-repeat: no-repeat;}
+    60%
+    {background-size: 60vw;
+    background-image: url(images/palette4.svg);
+    background-repeat: no-repeat;}
+    80%
+    {background-size: 60vw;
+    background-image: url(images/palette5.svg);
+    background-repeat: no-repeat;}
+    100%
+    {background-size: 60vw;
+    background-image: url(images/palette5.svg);
+    background-repeat: no-repeat;}
+  }
+
+  .mail2{
+    width: 70vw;
+    z-index:0;
+    top:70vw;
+    left: -10vw;
+    transform: rotate(42deg);
+    position: relative;}
+    .mail2Img{
+      width: 70vw;
+      position: absolute;
+      animation: mail2 4s steps(1) infinite;}
+  @keyframes mail2 {
+    0% {transform: translateX(-5vw) rotate(-90deg);}
+    30% {transform: translateX(5vw) rotate(-60deg);}
+    60% {transform: translateX(0vw) rotate(-30deg);}
+  }
+
+/* тетрадь, наклейки 6-18, скрепка */
+.frame8{
+  position: relative;
+  top:-290vw;
+  width: 100vw;
+  height: 120vw;
+  overflow-x: hidden;}
+
+  .todayImg{
+    position: absolute;
+    transform: translate3d(57vw, 23vw, 0vw) rotate(9deg);
+    z-index: 1;
+    width:24vw;
+    opacity: 1;}
+    .todayImg:hover{
+      opacity: 0;
+      transition: 0.2s linear;}
+  .weImg{
+    position: absolute;
+    transform: translate3d(52vw, 32vw, 0vw) rotate(9deg);
+    z-index: 1;
+    width:10vw;
+    opacity: 1;}
+    .weImg:hover{
+      opacity: 0;
+      transition: 0.2s linear;}
+  .practiseImg{
+    position: absolute;
+    transform: translate3d(54vw, 34vw, 0vw) rotate(9deg);
+    z-index: 1;
+    width:30vw;
+    opacity: 1;}
+    .practiseImg:hover{
+      opacity: 0;
+      transition: 0.2s linear;}
+  .writeImg{
+    position: absolute;
+    transform: translate3d(58vw, 56vw, 0vw) rotate(9deg);
+    z-index: 1;
+    width:23vw;
+    opacity: 1;}
+    .writeImg:hover{
+      opacity: 0;
+      transition: 0.2s linear;}
+  .notebooksticker2Img{
+    position: absolute;
+    transform: translate3d(34vw, 29vw, 0vw) rotate(10deg);
+    z-index: 1;
+    width:5vw;
+  }
+  .notebooksticker1Img{
+    position: absolute;
+    transform: translate3d(34vw, 29vw, 0vw) rotate(10deg);
+    z-index: 2;
+    width:5vw;
+    opacity: 1;
+  }
+    .notebooksticker1Img:hover{
+      opacity:0;}
+  .notebook3{
+    width: 87vw;
+    top:10vw;
+    left:8vw;
+    transform: rotate(8deg);
+    position: relative;}
+    .notebook3baseImg{
+      z-index:0;
+      width: 87vw;
+      position: absolute;}
+      .notebook3Img{
+        width: 87vw;
+        z-index:2;
+        top:1vw;
+        position: absolute;}
+
+    .notenbookmark1Img{
+      transform: rotate(3deg);
+      z-index: 1;
+      transform: translate3d(-2vw, 7vw, 0vw);
+      width:20vw;
+    }
+      .notenbookmark1Img:hover{
+        transform: translate3d(-5vw, 7vw, 0vw);
+        transition: 0.2s linear;
+      }
+    .notenbookmark2Img{
+      transform: rotate(3deg);
+      z-index: 1;
+      transform: translate3d(49vw, 37vw, 0vw);
+      width:20vw;
+    }
+      .notenbookmark2Img:hover{
+        transform: translate3d(52vw, 37vw, 0vw);
+        transition: 0.2s linear;
+      }
+    .notenbookmark3Img{
+      transform: rotate(3deg);
+      z-index: 1;
+      transform: translate3d(30vw, 29vw, 0vw);
+      width:20vw;
+    }
+      .notenbookmark3Img:hover{
+        transform: translate3d(33vw, 29vw, 0vw);
+        transition: 0.2s linear;
+      }
+    .notenbookmark4Img{
+      transform: rotate(3deg);
+      z-index: 1;
+      transform: translate3d(10vw, 47vw, 0vw);
+      width:20vw;
+    }
+      .notenbookmark4Img:hover{
+        transform: translate3d(13vw, 47vw, 0vw);
+        transition: 0.2s linear;
+      }
+
+  .sticker02Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(22vw, 102vw, 0vw);}
+      .sticker02Img:hover{
+          width: 11vw;
+          transition: 0.1s linear;}
+  .sticker03Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(89vw, 65vw, 0vw);}
+      .sticker03Img:hover{
+          transform: translate3d(86vw, 69vw, 0vw);
+          transition: 0.3s linear;}
+  .sticker04Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(37vw, 92vw, 0vw);}
+      .sticker04Img:hover{
+          width: 6vw;
+          transition: 0.2s linear;}
+  .sticker05Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(6vw, 85vw, 0vw);}
+      .sticker05Img:hover{
+          width: 9vw;
+          transition: 0.2s linear;}
+  .sticker06Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(83vw, 98vw, 0vw);}
+      .sticker06Img:hover{
+          opacity: 0;
+          transition: 0.1s linear;}
+  .sticker08Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(8vw, 64vw, 0vw);}
+      .sticker08Img:hover{
+          opacity: 0;
+          transition: 0.5s linear;}
+  .sticker11Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(58vw, 95vw, 0vw);}
+      .sticker11Img:hover{
+          width: 11vw;
+          transition: 0.2s linear;}
+  .sticker13Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(87vw, 83vw, 0vw);}
+      .sticker13Img:hover{
+          opacity: 0;
+          transition: 0.6s linear;}
+  .sticker15Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(46vw, 77vw, 0vw);}
+      .sticker15Img:hover{
+          transform: translate3d(27vw, 77vw, 0vw);
+          transition: 0.7s linear;}
+  .sticker16Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(38vw, 64vw, 0vw);}
+      .sticker16Img:hover{
+          width: 9vw;
+          transition: 0.2s linear;}
+  .sticker17Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(70vw, 83vw, 0vw);}
+      .sticker17Img:hover{
+          opacity: 0;
+          transition: 0.3s linear;}
+  .sticker18Img{
+    position: absolute;
+      width: 10vw;
+      transform: translate3d(65vw, 68vw, 0vw);}
+      .sticker18Img:hover{
+          width: 13vw;
+          transition: 0.4s linear;}
+
+  .clip5{
+    position: absolute;
+    left: 20vw;
+    top: 85vw;}
+    .clip5Img{
+    position: absolute;
+    width: 13vw;
+    animation: clip5 2.5s alternate infinite ease-in;}
+  @keyframes clip5 {
+    0% {transform: translate3d(5vw, 0, 0) rotate(-10deg);}
+    100% {transform: translate3d(0vw, 0, 0) rotate(320deg);}
+  }
