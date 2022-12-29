@@ -491,7 +491,7 @@
 /* скрепка2/3, а4, цыпленок, бумажка с пунктами, курица с глазом, бумажки скрепленные */
 .frame3{
   position: relative;
-  top:-70vw;
+  top:-75vw;
   width: 100vw;
   height: 130vw;
   overflow-x: hidden;}
@@ -689,7 +689,7 @@
 /* стикеры, круглая бумажка, бумажка с фигурами, тюбик с краской */
 .frame4{
   position: relative;
-  top:-105vw;
+  top:-115vw;
   width: 100vw;
   height: 100vw;
   overflow-x: hidden;}
@@ -918,7 +918,7 @@
 /* лист с кнопкой, цветочек, блокнот, кисть с краской, стикер */
 .frame5{
   position: relative;
-  top:-135vw;
+  top:-145vw;
   width: 100vw;
   height: 135vw;
   overflow-x: hidden;}
@@ -932,7 +932,7 @@
         transform: rotate(-12deg);
         width: 50vw;
         position: absolute;
-        animation: chickenpin 6s linear alternate infinite;}
+        animation: chickenpin 10s linear alternate infinite;}
   @keyframes chickenpin {
     0%
     {background-size: 50vw;
@@ -1100,30 +1100,30 @@
 /* лист с кнопкой, цветочек, блокнот, кисть с краской, стикер */
 .frame6{
   position: relative;
-  top:-190vw;
+  top:-195vw;
   width: 100vw;
   height: 84vw;
   overflow-x: hidden;}
 
   .paperpaws{
     width: 60vw;
-    left:63vw;
+    left:58vw;
     position: relative;}
     .paperpawsImg{
-      width: 38vw;
+      width: 42vw;
       position: absolute;
       animation: paperpaws 3s steps(1) infinite;}
   @keyframes paperpaws {
     0%
-    {background-size: 38vw;
+    {background-size: 42vw;
     background-image: url(images/paperpaws1.svg);
     background-repeat: no-repeat;}
     30%
-    {background-size: 38vw;
+    {background-size: 42vw;
     background-image: url(images/paperpaws2.svg);
     background-repeat: no-repeat;}
     60%
-    {background-size: 38vw;
+    {background-size: 42vw;
     background-image: url(images/paperpaws3.svg);
     background-repeat: no-repeat;}
   }
@@ -1204,7 +1204,9 @@
     position: relative;}
 
     .paperwithtextImg{
-      width: 38vw;
+      left:-1.5vw;
+      top: -2vw;
+      width: 40vw;
       position: absolute;}
 
     .zImg{
@@ -1378,7 +1380,7 @@
 /* письмо, наклейки3-5, палитра2, письмо2, кнопка */
 .frame7{
   position: relative;
-  top:-225vw;
+  top:-230vw;
   width: 100vw;
   height: 166vw;
   overflow-x: hidden;}
@@ -1513,7 +1515,7 @@
 /* тетрадь, наклейки 6-18, скрепка */
 .frame8{
   position: relative;
-  top:-290vw;
+  top:-295vw;
   width: 100vw;
   height: 120vw;
   overflow-x: hidden;}
@@ -1556,31 +1558,31 @@
       transition: 0.2s linear;}
   .notebooksticker2Img{
     position: absolute;
-    transform: translate3d(34vw, 29vw, 0vw) rotate(10deg);
+    transform: translate3d(33vw, 30vw, 0vw) rotate(10deg);
     z-index: 1;
-    width:5vw;
+    width:6vw;
   }
   .notebooksticker1Img{
     position: absolute;
-    transform: translate3d(34vw, 29vw, 0vw) rotate(10deg);
+    transform: translate3d(33vw, 30vw, 0vw) rotate(10deg);
     z-index: 2;
-    width:5vw;
+    width:6vw;
     opacity: 1;
   }
     .notebooksticker1Img:hover{
       opacity:0;}
   .notebook3{
-    width: 87vw;
+    width: 89vw;
     top:10vw;
     left:8vw;
     transform: rotate(8deg);
     position: relative;}
     .notebook3baseImg{
       z-index:0;
-      width: 87vw;
+      width: 89vw;
       position: absolute;}
       .notebook3Img{
-        width: 87vw;
+        width: 89vw;
         z-index:2;
         top:1vw;
         position: absolute;}
