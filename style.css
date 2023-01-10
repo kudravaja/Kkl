@@ -1,2 +1,6 @@
 @import 'reset.css';
 @import 'content.css';
+
+@font-face {
+    font-family: PatsySans;
+    src: url(fonts/PatsySans.otf); }

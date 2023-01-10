@@ -1517,7 +1517,7 @@
   position: relative;
   top:-295vw;
   width: 100vw;
-  height: 120vw;
+  height: 130vw;
   overflow-x: hidden;}
 
   .todayImg{
@@ -1624,7 +1624,7 @@
       width:20vw;
     }
       .notenbookmark4Img:hover{
-        transform: translate3d(13vw, 47vw, 0vw);
+        transform: translate3d(14vw, 47vw, 0vw);
         transition: 0.2s linear;
       }
 
@@ -1725,3 +1725,24 @@
     0% {transform: translate3d(5vw, 0, 0) rotate(-10deg);}
     100% {transform: translate3d(0vw, 0, 0) rotate(320deg);}
   }
+
+.footer{
+  position: relative;
+  top:-308vw;
+  width: 100vw;
+  height: 10vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;}
+
+  p {
+    font-family: 'PatsySans';
+    font-size: 2.5vw;
+    width: 20vw;}
+    p:hover{
+      font-size: 3.5vw;}
+  .hselogo {
+    width: 12vw;}
+    .hselogo:hover {
+    width: 14vw;}
