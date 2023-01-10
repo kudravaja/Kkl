@@ -1727,13 +1727,14 @@
   }
 
 .footer{
+  left:5vw;
   position: relative;
   top:-308vw;
-  width: 100vw;
+  width: 90vw;
   height: 10vw;
   overflow-x: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;}
 
   p {
